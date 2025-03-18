@@ -1,5 +1,6 @@
-import webbrowser
-from tabulate import tabulate 
+
+import webbrowser # Se incorporo para poder dar acceso aun link 
+from tabulate import tabulate # Para mejorar la visualización de tablas 
 
 # Diccionarios para almacenar datos de mascotas y citas
 datos_mascotas = {}
@@ -83,7 +84,8 @@ while True:
         else:
             for consulta in historial:
                 print(f"Fecha: {consulta['fecha']}, Tipo: {consulta['tipo']}")
-
+                
+# Se agrega esta función para poder mostrar la otra parte del ejercicio de investigación
     def mostrar_lenguajes():
         print("""
 === Lenguajes de Programación de Alto Nivel ===
